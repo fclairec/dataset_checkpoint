@@ -9,7 +9,7 @@ def print_hi(name):
     BIM("..", "T4", True, transform=T.NormalizeScale())
 
     a=0
-    b=0
+    
 
 
 # Press the green button in the gutter to run the script.
