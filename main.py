@@ -9,7 +9,7 @@ def print_hi(name):
     BIM("..", "T4", True, transform=T.NormalizeScale())
 
     a=0
-    v=0
+    
 
 
 
