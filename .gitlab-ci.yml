@@ -3,10 +3,14 @@
 # https://hub.docker.com/r/library/python/tags/
 image: python:latest
 
+test_simple_job:
+  script:
+    - echo I should execute for any pipeline trigger.
+
+
 # Change pip's cache directory to be inside the project directory since we can
 # only cache local items.
 variables:
-  PIP_INDEX_URL: https://devops.bt.siemens.com/artifactory/api/pypi/pypi-all/simple
   PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
   HOME_DIR: "$CI_PROJECT_DIR/"
   PIP_REQUIREMENTS: "$CI_PROJECT_DIR/requirements.txt"
